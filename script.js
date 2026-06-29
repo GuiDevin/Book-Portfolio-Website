@@ -17,7 +17,6 @@ pageTurnBtn.forEach((el, index) => {
     }
 });
 
-// navegação pelo teclado
 const turnPages = ['turn-1', 'turn-2', 'turn-3'];
 let currentPage = 0;
 
@@ -44,7 +43,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// contact me button when click
 const pages = document.querySelectorAll('.book-page.page-right');
 const contactMeBtn = document.querySelector('.btn.contact-me');
 contactMeBtn.onclick = () => {
@@ -69,7 +67,6 @@ function reverseIndex() {
     }
 }
 
-// back profile button when click
 const backProfileBtn = document.querySelector('.back-profile');
 backProfileBtn.onclick = () => {
     pages.forEach((_, index) => {
@@ -85,11 +82,9 @@ backProfileBtn.onclick = () => {
     currentPage = 0;
 }
 
-// opening animation
 const coverRight = document.querySelector('.cover.cover-right');
 const pageLeft = document.querySelector('.book-page.page-left');
 
-// open animation (cover right animation)
 setTimeout(() => {
     coverRight.classList.add('turn');
 }, 2100);
@@ -125,7 +120,6 @@ pageTurnBtn.forEach((el, index) => {
     }
 });
 
-// navegação pelo teclado
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') {
         const nextBtn = document.querySelector('.nextprev-btn[data-direction="next"]');
@@ -137,7 +131,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// contact me button when click
 const pages = document.querySelectorAll('.book-page.page-right');
 const contactMeBtn = document.querySelector('.btn.contact-me');
 contactMeBtn.onclick = () => {
@@ -151,7 +144,6 @@ contactMeBtn.onclick = () => {
     });
 }
 
-// create reverse index function
 let totalPages = pages.length;
 let pageNumber = 0;
 function reverseIndex() {
@@ -161,7 +153,6 @@ function reverseIndex() {
     }
 }
 
-// back profile button when click
 const backProfileBtn = document.querySelector('.back-profile');
 backProfileBtn.onclick = () => {
     pages.forEach((_, index) => {
@@ -176,7 +167,6 @@ backProfileBtn.onclick = () => {
     })
 }
 
-// opening animation
 const coverRight = document.querySelector('.cover.cover-right');
 const pageLeft = document.querySelector('.book-page.page-left');
 
